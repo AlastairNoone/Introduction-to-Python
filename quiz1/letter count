@@ -1,0 +1,8 @@
+#my_word = 'Mississippi'
+#print my_word.count("p")
+
+def number_of_specified_letter(word):
+    """Returns the number of lower-case i's in the word."""
+    return word.count("l")
+
+print number_of_specified_letter('Mary had a little lamb')
