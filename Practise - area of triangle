@@ -1,0 +1,19 @@
+def length_of_side(x0, y0, x1,y1):
+    length_of_side = ((x0 - x1) ** 2 + (y0 - y1) ** 2) ** 0.5
+    return length_of_side
+
+def area_of_triangle(x0, y0, x1, y1, x2, y2):
+    
+    
+    a = length_of_side(x0, y0, x1, y1)
+    b = length_of_side(x2,y2, x0, y0)
+    c = length_of_side(x1, y1, x2, y2)
+    
+    s = s = (a + b + c) / 2
+    
+    return (s * (s - a) * (s - b) * (s - c)) ** 0.5
+
+
+print area_of_triangle(0, 0, 3, 4, 1, 1)
+print area_of_triangle(-2, 4, 1, 6, 2, 1)
+print area_of_triangle(10, 0, 0, 0, 0, 10)
