@@ -1,0 +1,10 @@
+def leap_year(year):
+    return ((year) % 4 == 0) and ((year) % 100 != 0)or ((year) % 400 == 0)
+
+
+print leap_year (1840)
+print leap_year (1844)
+print leap_year (1848)
+print leap_year (1850)
+print leap_year (1851)
+    
